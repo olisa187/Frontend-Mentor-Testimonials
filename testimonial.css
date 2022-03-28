@@ -29,6 +29,7 @@
 
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 0.8125rem;
     line-height: 1.6;
     background-color: hsl(var(--clr-l-g-b));
 }
@@ -38,13 +39,13 @@ body *+* {
 }
 
 .container {
-    max-width: 70em;
+    max-width: 90em;
     margin: 100px auto;
 }
 
-.container * {
+/* .container * {
     font-size: 0.8125rem;
-}
+} */
 
 /* utilities */
 .flex {
@@ -56,6 +57,12 @@ body *+* {
     margin-top: 0;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
 /* general  */
 
 hgroup {
@@ -64,8 +71,10 @@ hgroup {
 
 .testimonal-card {
     background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-v-d-g-b));
     border-radius: 10px;
     padding: 3em;
+    margin-top: 0;
 
 }
 
@@ -76,6 +85,13 @@ hgroup {
     background-position: 800px top;
     color: hsl(var(--clr-white));
 
+    /* style to control the postioning of this card */
+    grid-column: 1/3;
+
+}
+
+.testimonal-card:nth-child(4) img {
+    border: 3px solid #5f4697;
 }
 
 .testimonal-card:nth-child(2) {
@@ -86,8 +102,28 @@ hgroup {
 .testimonal-card:nth-child(4) {
     background-color: hsl(var(--clr-v-d-b-b));
     color: hsl(var(--clr-white));
+
+    /* style to control the postioning of this card */
+    grid-column: 2/4;
+    /* grid-row: 2; */
+}
+
+.testimonal-card:nth-child(5) {
+    /* style to control the postioning of this card */
+    grid-column: 4;
+    grid-row: 1 / 3;
 }
 
 .testimonal-card img {
     border-radius: 50%;
+}
+
+h4,
+.clr-opacity {
+    opacity: .5;
+}
+
+.attribution {
+    /* this class acts like a footer */
+    text-align: center;
 }
