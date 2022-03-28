@@ -1,0 +1,93 @@
+/* importing style fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Bellefair&display=swap');
+
+/* ------------------ */
+/*  Custom Properties */
+/* ------------------ */
+
+/* Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* root variables */
+:root {
+    /* color styles */
+    --clr--m-v: 263, 55%, 52%;
+    --clr-v-d-g-b: 217, 19%, 35%;
+    --clr-v-d-b-b: 219, 29%, 14%;
+    --clr-white: 0, 0%, 100%;
+    /* Neutral colors */
+    --clr-l-g: 0, 0%, 81%;
+    --clr-l-g-b: 210, 46%, 95%;
+
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.6;
+    background-color: hsl(var(--clr-l-g-b));
+}
+
+body *+* {
+    margin-top: 1.5em;
+}
+
+.container {
+    max-width: 70em;
+    margin: 100px auto;
+}
+
+.container * {
+    font-size: 0.8125rem;
+}
+
+/* utilities */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex * {
+    margin-top: 0;
+}
+
+/* general  */
+
+hgroup {
+    margin-left: 1em;
+}
+
+.testimonal-card {
+    background-color: hsl(var(--clr-white));
+    border-radius: 10px;
+    padding: 3em;
+
+}
+
+.testimonal-card:first-child {
+    background-color: hsl(var(--clr--m-v));
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 800px top;
+    color: hsl(var(--clr-white));
+
+}
+
+.testimonal-card:nth-child(2) {
+    background-color: hsl(var(--clr-v-d-g-b));
+    color: hsl(var(--clr-white));
+}
+
+.testimonal-card:nth-child(4) {
+    background-color: hsl(var(--clr-v-d-b-b));
+    color: hsl(var(--clr-white));
+}
+
+.testimonal-card img {
+    border-radius: 50%;
+}
