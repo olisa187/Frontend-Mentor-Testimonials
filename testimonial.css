@@ -34,7 +34,7 @@ body {
     background-color: hsl(var(--clr-l-g-b));
 }
 
-*/ body *+* {
+body *+* {
     margin-top: 1.5em;
 }
 
@@ -43,9 +43,7 @@ body {
     margin: 100px auto;
 }
 
-/* .container * {
-    font-size: 0.8125rem;
-} */
+
 
 /* utilities */
 .flex {
@@ -106,7 +104,7 @@ hgroup {
 
     /* style to control the postioning of this card */
     grid-column: 2/4;
-    /* grid-row: 2; */
+
 }
 
 .testimonal-card:nth-child(5) {
