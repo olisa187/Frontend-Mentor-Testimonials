@@ -34,7 +34,7 @@ body {
     background-color: hsl(var(--clr-l-g-b));
 }
 
-body *+* {
+*/ body *+* {
     margin-top: 1.5em;
 }
 
@@ -82,7 +82,7 @@ hgroup {
     background-color: hsl(var(--clr--m-v));
     background-image: url(images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
-    background-position: 800px top;
+    background-position: right 100px top 20px;
     color: hsl(var(--clr-white));
 
     /* style to control the postioning of this card */
@@ -90,7 +90,8 @@ hgroup {
 
 }
 
-.testimonal-card:nth-child(4) img {
+.testimonal-card:nth-child(4) img,
+.testimonal-card:first-child img {
     border: 3px solid #5f4697;
 }
 
@@ -123,7 +124,32 @@ h4,
     opacity: .5;
 }
 
+a {
+    text-decoration: none;
+}
+
 .attribution {
     /* this class acts like a footer */
     text-align: center;
+    margin: 20px;
+}
+
+/* mobile veiw of max-width 375px == 23.4375em */
+@media (max-width: 46.875em) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr; */
+        /* grid-template-rows: auto; */
+        padding: 20px;
+    }
+
+
+    .grid>* {
+        margin-top: 20px;
+    }
+
+    .testimonal-card:first-child {
+        background-position: right 10px top 10px;
+    }
 }
