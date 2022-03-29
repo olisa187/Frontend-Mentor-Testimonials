@@ -124,23 +124,22 @@ h4,
     opacity: .5;
 }
 
-a {
-    text-decoration: none;
-}
-
 .attribution {
     /* this class acts like a footer */
     text-align: center;
     margin: 20px;
 }
 
-/* mobile veiw of max-width 375px == 23.4375em */
-@media (max-width: 46.875em) {
+.attribution a {
+    text-decoration: none;
+}
+
+/* mobile veiw of max-width 375px == 23.4375em, 750 = 46.875em */
+@media (max-width: 23.4375em) {
     .grid {
         display: flex;
         flex-direction: column;
-        /* grid-template-columns: 1fr; */
-        /* grid-template-rows: auto; */
+
         padding: 20px;
     }
 
