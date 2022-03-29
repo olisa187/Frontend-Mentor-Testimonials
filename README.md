@@ -35,8 +35,8 @@ devices.
 
 ### Links
 
-- Solution URL: https://github.com/olisa187/Frontend-Mentor-Testimonials
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github page](https://github.com/olisa187/Frontend-Mentor-Testimonials)
+- Live Site URL: [Testimonial card grid](https://harmonious-parfait-d16536.netlify.app)
 
 ## My process
     
